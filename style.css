@@ -1,0 +1,14 @@
+body{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.header{
+    margin-bottom: 1rem;
+    border-bottom: 0.2rem solid #CCC;
+}
+.header h3{
+    margin:0 auto;
+    line-height: 3.5rem;
+    
+}
