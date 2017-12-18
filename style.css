@@ -12,3 +12,13 @@ body{
     line-height: 3.5rem;
     
 }
+.w-22{
+    width: 22%!important;
+}
+.card{
+    min-height: 170px;
+}
+.card > img {
+    width: 130px;
+    /* margin-left: 20%;     */
+} 

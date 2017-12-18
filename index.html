@@ -6,23 +6,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-  <header class="header clearfix">
-    <nav>
-      <ul class="nav nav-pills float-right">
-        <li class="nav-item"><a href="" class="nav-link active">Iniciar</a></li>
-      </ul>
-    </nav>
-    <h3 class="text-muted">Jogo da Memória</h3>
-  </header>
-  <main role="main">
-    <div class="tabuleiro border border-success rounded">
-      
-    </div>
-  </main>
-</div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script charset="utf8">
   var app = { nrComponentes:0 };
   app.getComponente = function(nome) {
@@ -33,6 +17,27 @@
     return app[nome];
   };
 </script>
+<script src="https://momentjs.com/downloads/moment.min.js"></script>
+<script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<div class="container">
+  <header class="header clearfix">
+    <nav>
+      <ul class="nav nav-pills float-right">
+        <li class="nav-item">
+          <button type="button" id="btn-start" class="btn btn-outline-primary" >Iniciar</button>
+        </li>
+      </ul>
+    </nav>
+    <h3 class="text-muted">Jogo da Memória <small id="stopwatch"></small></h3>
+  </header>
+  <main role="main" class="container">
+    <div id="tabuleiro" class="border border-success rounded row p-2">
+    </div>
+  </main>
+</div>
 <script src="script.js" charset="utf8"></script>
 </body>
 </html>
