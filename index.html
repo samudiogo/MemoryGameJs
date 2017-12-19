@@ -2,11 +2,11 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script src="https://use.fontawesome.com/628f4ca798.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <script charset="utf8">
   var app = { nrComponentes:0 };
   app.getComponente = function(nome) {
@@ -17,26 +17,19 @@
     return app[nome];
   };
 </script>
-<script src="https://momentjs.com/downloads/moment.min.js"></script>
-<script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
+<script src="moment.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
 <div class="container">
   <header class="header clearfix">
     <nav>
       <ul class="nav nav-pills float-right">
-        <li class="nav-item">
-          <button type="button" id="btn-start" class="btn btn-outline-primary" >Iniciar</button>
-        </li>
+        <li class="nav-item"><button type="button" id="btn-start" class="btn btn-outline-primary" > <i class="fa fa-play"></i> </button></li>
+        <li class="nav-item"><button type="button" id="btn-reset" class="btn btn-outline-danger" > <i class="fa fa-undo"></i> </button></li>
       </ul>
     </nav>
     <h3 class="text-muted">Jogo da Memória <small id="stopwatch"></small></h3>
   </header>
-  <main role="main" class="container">
-    <div id="tabuleiro" class="border border-success rounded row p-2">
-    </div>
-  </main>
+  <main role="main" class="container"><div id="tabuleiro" class="border border-success rounded row p-2"></div></main>
 </div>
 <script src="script.js" charset="utf8"></script>
 </body>
